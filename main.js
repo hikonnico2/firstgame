@@ -1,7 +1,7 @@
 // - global -------------------------------------------------------------------
 var screenCanvas, info;
 var run = true;
-var fps = 1000 / 40;
+var fps = 1000 / 28;
 var mouse = new Point();
 var ctx;
 var fire = false;
@@ -12,14 +12,14 @@ var radian = new Array();
 var img = new Image();
 
 // - const --------------------------------------------------------------------
-var CHARA_COLOR = 'rgba(0, 0, 255, 0.75)';
-var CHARA_SHOT_COLOR = 'rgba(0, 255, 0, 0.75)';
+var CHARA_COLOR = 'rgba(96,21,147,1)';
+var CHARA_SHOT_COLOR = 'rgba(0,189,92,1)';
 var CHARA_SHOT_MAX_COUNT = 10;
-var ENEMY_COLOR = 'rgba(255, 0, 0, 0.75)';
+var ENEMY_COLOR = 'rgba(220,92,29,1)';
 var ENEMY_MAX_COUNT = 100;
-var ENEMY_SHOT_COLOR = 'rgba(255, 0, 255, 0.75)';
+var ENEMY_SHOT_COLOR = 'rgba(255,0,145,1)';
 var ENEMY_SHOT_MAX_COUNT = 100;
-var BOSS_COLOR = 'rgba(128, 128, 128, 0.75)';
+var BOSS_COLOR = 'rgba(255,0,0,1)';
 var BOSS_BIT_COLOR = 'rgba(224,192,59,1)';
 var BOSS_BIT_COUNT = 6;
 
@@ -34,8 +34,8 @@ window.onload = function () {
 
     // スクリーンの初期化
     screenCanvas = document.getElementById('screen');
-    screenCanvas.width = 500;
-    screenCanvas.height = 500; //256
+    screenCanvas.width = 400;
+    screenCanvas.height = 400; //256
 
     // 自機の初期位置を修正
     mouse.x = screenCanvas.width / 2;

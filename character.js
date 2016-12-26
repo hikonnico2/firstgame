@@ -72,7 +72,7 @@ Enemy.prototype.move = function(){
             this.param++;
 
             // X 方向へまっすぐ進む
-            this.position.x += 5;
+            this.position.x += 7;
 
             this.position.y -= radian[this.param % 360] * 2.5;
 
@@ -85,7 +85,7 @@ Enemy.prototype.move = function(){
             this.param++;
 
             // マイナス X 方向へまっすぐ進む
-            this.position.x -= 6;
+            this.position.x -= 7;
 
             this.position.y -= radian[this.param % 360] * 2.5;
 
@@ -96,20 +96,20 @@ Enemy.prototype.move = function(){
             break;
         case 2:
 
-            this.param += 3;
+            this.param += 2;
 
-            this.position.x -= 0.5;
-			this.position.y += Math.cos(radian[this.param]) * 10;
+            this.position.x -= 1.5;
+			this.position.y += Math.cos(radian[this.param]) * 18;
 
             if(this.position.y < -this.size){
 				this.alive = false;
 			}
 			break;
         case 3:
-            this.param += 3;
+            this.param += 2;
 
-            this.position.x += 0.5;
-			this.position.y += Math.cos(radian[this.param]) * 5;
+            this.position.x += 1.5;
+			this.position.y += Math.cos(radian[this.param]) * 18;
 
             if(this.position.y < -this.size){
 				this.alive = false;

@@ -32,7 +32,7 @@ Boss.prototype.move = function(){
     switch(true){
         case this.param < 100:
             // 下方向へまっすぐ進む
-            this.position.y += 1.5;
+            this.position.y += 1.6;
             break;
         default:
             // パラメータからラジアンを求める
@@ -50,7 +50,7 @@ Boss.prototype.move = function(){
 function Bit(){
     this.position = new Point();
     this.parent = null;
-    this.size = 0;
+    this.size = 1;
     this.life = 0;
     this.param = 0;
     this.alive = false;
