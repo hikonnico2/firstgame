@@ -2,6 +2,7 @@ body{
   background-color:lightgrey;
   color : #ffffff;
   font-size:62.5%;
+  text-align: center;
 }
 
 #header{
@@ -9,7 +10,7 @@ body{
   height:60px;
   background-color:#1e93c1;
   font-size:30px;
-  text-align : center;
+  text-align: center;
 }
 
 #contents{
@@ -24,7 +25,7 @@ body{
   font-size: 2.5em;
   line-height: 1.5em;
   border-radius: 15px;
-  text-align:center
+  text-align: center;
 }
 
 #footer{
@@ -33,5 +34,5 @@ body{
   background-color :lightseagreen;
   color : #ffffff;
   font-size:1.4em;
-  text-align : center;
+  text-align: center;
 }
